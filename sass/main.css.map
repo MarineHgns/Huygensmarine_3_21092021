@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;EACjC,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,uBAAuB;CACvC",
+    "sources": [
+        "main.scss",
+        "base/_animations.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "components/_buttons.scss",
+        "components/_widgets.scss",
+        "layout/_footer.scss",
+        "layout/_header.scss",
+        "layout/_grid.scss",
+        "pages/_home.scss",
+        "pages/_menus.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_placeholders.scss",
+        "utils/_variables.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
