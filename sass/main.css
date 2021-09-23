@@ -6,4 +6,228 @@ body {
 h2 {
   font-family: 'Shrikhand', sans-serif;
 }
+
+.btn_1 {
+  background: #FF79DA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 1.8em;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+          box-shadow: 0px 1px 3px #666666;
+  color: white;
+  margin-bottom: 0em;
+  padding: 0.9em 0em;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-size: larger;
+  padding: 0 1em 1em 1em;
+}
+
+footer h2 {
+  padding-top: 0.6em;
+  font-weight: 100;
+  font-size: 1.3em;
+  margin-top: 0em;
+}
+
+.col-footer {
+  padding-bottom: 0.8em;
+}
+
+.col-footer > .fa-utensils {
+  padding-right: 0.7em;
+}
+
+.col-footer > .fa-hands-helping {
+  padding-right: 0.2em;
+}
+
+@media screen and (min-width: 425px) {
+  footer {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .col-footer {
+    padding: 0 0.8em 0 0.8em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .col-footer {
+    font-size: 1em;
+  }
+}
+
+header {
+  text-align: center;
+  margin: 1.4em 0em;
+}
+
+body {
+  margin: 0em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav .backLink {
+  display: none;
+  color: pink;
+}
+
+.position {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 1em;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+}
+
+.masthead {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 1em 1.4em 2.6em 1.4em;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.main {
+  background-color: #f6f6f6;
+  margin-top: 2em;
+  padding-bottom: 3em;
+}
+
+.main .title {
+  padding: 2em 1em 0.1em 1em;
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .main .title {
+    font-size: 1.8em;
+  }
+}
+
+.restaurants-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 1.5em;
+  margin: 2% 4%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant-card {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 3em;
+  }
+}
+
+.restaurant-img {
+  max-height: 170px;
+  width: 100%;
+  border-radius: 1em 1em 0em 0em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-img {
+    max-height: 280px;
+    width: 100%;
+  }
+}
+
+.restaurant-text {
+  line-height: 0em;
+  padding-bottom: 1.6em;
+  padding: 0.2em 0em 1.2em 1.2em;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-text {
+    font-size: 28px;
+  }
+}
+
+.tag {
+  background: #a9e0d1;
+  color: #3b8468;
+  font-weight: 500;
+  padding: 0.4em 1em;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tag {
+    font-size: 27px;
+  }
+}
+
+.restaurant-text > .fa-heart {
+  font-weight: 100;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 1.4em;
+}
 /*# sourceMappingURL=main.css.map */

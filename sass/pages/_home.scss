@@ -1,0 +1,123 @@
+body {
+    margin: 0em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav .backLink {
+    display: none;
+    color: pink;
+}
+
+.position {
+    text-align: center;
+    background-color: $color-background-darker;
+    padding: 1em;
+    font-weight: 600;
+    box-shadow: 0 0 15px #0000002e;
+    
+}
+
+.masthead {
+    text-align: center;
+    background-color: $color-background;
+    padding: 1em 1.4em 2.6em 1.4em;
+    font-size: 1.2em;
+}
+
+.subtitle {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+.main {
+    background-color: $color-background;
+    margin-top: 2em;
+    padding-bottom: 3em;
+}
+
+.main .title {
+    padding: 2em 1em 0.1em 1em;
+    font-size: 0.8em;
+    @media screen and (min-width: 768px) {
+        font-size: 1.8em;
+    }
+}
+
+.restaurants-list {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 1.5em;
+    margin: 2% 4%;
+    justify-content: center;
+    box-shadow: 0 0 15px #0000002e;
+    position: relative;
+       @media screen and (min-width: 1024px) {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    
+}
+.restaurant-img {
+    max-height: 170px;
+    width: 100%;
+    border-radius: 1em 1em 0em 0em;
+    box-sizing: border-box;
+    object-fit: cover;
+    @media screen and (min-width: 768px) {
+        max-height: 280px;
+        width: 100%; 
+    }
+}
+
+.restaurant-text {
+    line-height: 0em;
+    padding-bottom: 1.6em;
+    padding: 0.2em 0em 1.2em 1.2em;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.tag {
+    background: #a9e0d1;
+    color: #3b8468;
+    font-weight: 500;
+    padding: 0.4em 1em;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    @media screen and (min-width: 768px) {
+        font-size: 27px;
+    }
+}
+
+.restaurant-text > .fa-heart {
+    font-weight: 100;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    font-size: 1.4em;
+
+}

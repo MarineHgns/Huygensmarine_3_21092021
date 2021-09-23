@@ -1,6 +1,10 @@
-@import "./base/animations";
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/reset";
 @import "./base/typography";
+@import "./base/animations";
 @import "./components/buttons";
 @import "./components/widgets";
 @import "./layout/footer";
@@ -8,14 +12,3 @@
 @import "./layout/grid";
 @import "./pages/home";
 @import "./pages/menus";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/placeholders";
-@import "./utils/variables";
-
-
-
-
-
-
-

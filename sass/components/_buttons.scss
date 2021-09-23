@@ -1,0 +1,9 @@
+.btn_1 {
+    background: $color-secondary;
+    background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
+    border-radius: 1.8em;
+    box-shadow: 0px 1px 3px #666666;
+    color: $color-text-secondary;
+    margin-bottom: 0em;
+    padding: 0.9em 0em;
+  }
