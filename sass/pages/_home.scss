@@ -1,5 +1,6 @@
 body {
-    margin: 0em;
+    margin: auto;
+    max-width: 768px;
 }
 
 a {
@@ -7,9 +8,8 @@ a {
     text-decoration: none;
 }
 
-nav .backLink {
+nav .backMenu-disabeld {
     display: none;
-    color: pink;
 }
 
 .position {
@@ -18,7 +18,11 @@ nav .backLink {
     padding: 1em;
     font-weight: 600;
     box-shadow: 0 0 15px #0000002e;
-    
+    font-size: 1.3em;
+    @media screen and (min-width: 768px) {
+        font-size: 0.7em;
+        padding: 0.4em 0em;
+    }
 }
 
 .masthead {
@@ -26,6 +30,11 @@ nav .backLink {
     background-color: $color-background;
     padding: 1em 1.4em 2.6em 1.4em;
     font-size: 1.2em;
+    @media screen and (min-width: 768px) {
+        font-size: 0.7em;
+        line-height: 1.1em;
+        padding: 0.1em 0em;
+    }
 }
 
 .subtitle {
@@ -33,32 +42,80 @@ nav .backLink {
     font-size: 0.9em;
 }
 
+.howTo > .title {
+    padding-left: 1.2em;
+    font-size: 1.2em;
+    @media screen and (min-width: 768px) {
+        font-size: 0.7em;
+        padding-left: 3em;
+    }
+}
 
+.number {
+    background: #9356dc;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.9em;
+    top: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        top: 0.5em;
+        height: 1.5em;
+        width: 1.5em;
+        left: -0.2em;
+      }
+}
+.order-card > .fas {
+    padding-left: 2em;
+    padding-right: 0.8em;
+    font-size: 1.2em;
+    color: rgb(128, 127, 127);
+}
+.fas.fa-store {
+    color: $color-primary;
+}
 
-
-
-
+.order-list {
+    margin-bottom:4em;
+    @media screen and (min-width: 768px) {
+        font-size: 0.7em;
+        margin-bottom: 1.2em;
+        margin-top: -2.4em;
+    }
+}
 .main {
     background-color: $color-background;
-    margin-top: 2em;
-    padding-bottom: 3em;
+    padding-top: 8%;
+    padding-bottom: 4em;
+    @media screen and (min-width: 768px) {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+
+    }   
 }
 
 .main .title {
     padding: 2em 1em 0.1em 1em;
-    font-size: 0.8em;
+    font-size: 1em;
     @media screen and (min-width: 768px) {
-        font-size: 1.8em;
-    }
+        font-size: 0.6em;
+        padding-left: 3em;
+        margin-bottom: -2.6em;
+        padding-top: 0em;
+    }   
 }
 
 .restaurants-list {
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 100%;
     }
 
 }
@@ -66,16 +123,16 @@ nav .backLink {
 .restaurant-card {
     background-color: white;
     border-radius: 1.5em;
-    margin: 2% 4%;
+    margin: 3% 4%;
+    padding-bottom: 2%;
     justify-content: center;
     box-shadow: 0 0 15px #0000002e;
     position: relative;
-       @media screen and (min-width: 1024px) {
-        width: 40%;
-        margin: auto;
-        margin-bottom: 3em;
-    }
-    
+       @media screen and (min-width: 768px) {
+        margin: 2% 10%;
+        padding-bottom: 0%;
+        width: 30%;
+    }  
 }
 .restaurant-img {
     max-height: 170px;
@@ -83,10 +140,7 @@ nav .backLink {
     border-radius: 1em 1em 0em 0em;
     box-sizing: border-box;
     object-fit: cover;
-    @media screen and (min-width: 768px) {
-        max-height: 280px;
-        width: 100%; 
-    }
+    
 }
 
 .restaurant-text {
@@ -94,9 +148,6 @@ nav .backLink {
     padding-bottom: 1.6em;
     padding: 0.2em 0em 1.2em 1.2em;
     position: relative;
-    @media screen and (min-width: 768px) {
-        font-size: 28px;
-    }
 }
 
 .tag {
@@ -108,9 +159,6 @@ nav .backLink {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    @media screen and (min-width: 768px) {
-        font-size: 27px;
-    }
 }
 
 .restaurant-text > .fa-heart {
@@ -119,5 +167,11 @@ nav .backLink {
     right: 20px;
     top: 18px;
     font-size: 1.4em;
-
 }
+
+.restaurant-text > .fa-heart:hover {
+    background-clip: linear-gradient(to bottom
+        , #ff79da, #9356dc) content-box;
+        
+}
+

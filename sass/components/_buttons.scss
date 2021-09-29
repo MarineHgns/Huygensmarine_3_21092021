@@ -1,9 +1,75 @@
-.btn_1 {
+.btn {
     background: $color-secondary;
     background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
     border-radius: 1.8em;
     box-shadow: 0px 1px 3px #666666;
     color: $color-text-secondary;
-    margin-bottom: 0em;
     padding: 0.9em 0em;
+    margin: 2%;
+      @media screen and (min-width: 375px) {
+        margin: 11%;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 1em;
+        margin: 2% 33%;
+    }
   }
+
+  .order-card {
+    @include shadow;
+    background-color: $color-background;
+    border-radius: 1.4em;
+    margin: 9% 5.5%;
+    font-weight: bold;
+    padding: 1.8em 0em;
+    position: relative;
+    font-size: 1em;
+
+    @media screen and (min-width: 375px) {
+      font-size: 1.1em;
+    }
+    @media screen and (min-width: 425px) {
+      font-size: 1.4em;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 2% 35%;
+      font-size: 1em;
+      padding: 1% 1%;
+  }
+  @media screen and (min-width: 1024px) {
+    
+    font-size: 1.1em;
+  }
+} 
+  
+  .order-card.color {
+    background-color: $color-primary-lighter;
+  }
+
+  .menu__card {
+    @include shadow;
+    border-radius: 1em;
+    margin: 1em;
+    font-weight: bold;
+    padding: 0.7em;
+    position: relative;
+    font-size: 1em;
+    line-height: 1.8em;
+    @media screen and (min-width: 768px) {
+      font-size: 0.6em;
+      margin: 1% 4%;
+      padding: 0.5%;
+      line-height: 1.2em;
+  }
+  }
+
+.main__menu > .btn {
+  text-align: center;
+  margin: 18%;
+  font-size: 1.4em;
+  @media screen and (min-width: 768px) {
+    margin: 2% 37%;
+    font-size: 0.8em;
+    padding: 1.5% 0%;
+}
+}

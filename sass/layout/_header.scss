@@ -2,4 +2,14 @@ header
 {
     text-align: center;
     margin: 1.4em 0em;  
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0.4em;
+      }
+}
+
+.headerLogo
+{
+    @media screen and (min-width: 768px) {
+        width: 15%;
+      }
 }

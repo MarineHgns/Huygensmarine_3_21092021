@@ -3,11 +3,11 @@ body {
   max-width: 100%;
 }
 
-h2 {
+h4 {
   font-family: 'Shrikhand', sans-serif;
 }
 
-.btn_1 {
+.btn {
   background: #FF79DA;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -15,8 +15,98 @@ h2 {
   -webkit-box-shadow: 0px 1px 3px #666666;
           box-shadow: 0px 1px 3px #666666;
   color: white;
-  margin-bottom: 0em;
   padding: 0.9em 0em;
+  margin: 2%;
+}
+
+@media screen and (min-width: 375px) {
+  .btn {
+    margin: 11%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1em;
+    margin: 2% 33%;
+  }
+}
+
+.order-card {
+  -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+  background-color: #f6f6f6;
+  border-radius: 1.4em;
+  margin: 9% 5.5%;
+  font-weight: bold;
+  padding: 1.8em 0em;
+  position: relative;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 375px) {
+  .order-card {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .order-card {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-card {
+    margin: 2% 35%;
+    font-size: 1em;
+    padding: 1% 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .order-card {
+    font-size: 1.1em;
+  }
+}
+
+.order-card.color {
+  background-color: #f5edff;
+}
+
+.menu__card {
+  -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+  border-radius: 1em;
+  margin: 1em;
+  font-weight: bold;
+  padding: 0.7em;
+  position: relative;
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__card {
+    font-size: 0.6em;
+    margin: 1% 4%;
+    padding: 0.5%;
+    line-height: 1.2em;
+  }
+}
+
+.main__menu > .btn {
+  text-align: center;
+  margin: 18%;
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .main__menu > .btn {
+    margin: 2% 37%;
+    font-size: 0.8em;
+    padding: 1.5% 0%;
+  }
 }
 
 footer {
@@ -26,11 +116,18 @@ footer {
   padding: 0 1em 1em 1em;
 }
 
-footer h2 {
+footer h4 {
   padding-top: 0.6em;
   font-weight: 100;
   font-size: 1.3em;
   margin-top: 0em;
+}
+
+@media screen and (min-width: 768px) {
+  footer h4 {
+    font-size: 0.8em;
+    padding-bottom: 0.4em;
+  }
 }
 
 .col-footer {
@@ -60,6 +157,9 @@ footer h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    font-size: 0.8em;
+    margin-top: -1.5em;
+    margin-bottom: -0.8em;
   }
 }
 
@@ -82,8 +182,21 @@ header {
   margin: 1.4em 0em;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 0.4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headerLogo {
+    width: 15%;
+  }
+}
+
 body {
-  margin: 0em;
+  margin: auto;
+  max-width: 768px;
 }
 
 a {
@@ -91,9 +204,8 @@ a {
   text-decoration: none;
 }
 
-nav .backLink {
+nav .backMenu-disabeld {
   display: none;
-  color: pink;
 }
 
 .position {
@@ -103,6 +215,14 @@ nav .backLink {
   font-weight: 600;
   -webkit-box-shadow: 0 0 15px #0000002e;
           box-shadow: 0 0 15px #0000002e;
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 768px) {
+  .position {
+    font-size: 0.7em;
+    padding: 0.4em 0em;
+  }
 }
 
 .masthead {
@@ -112,25 +232,107 @@ nav .backLink {
   font-size: 1.2em;
 }
 
+@media screen and (min-width: 768px) {
+  .masthead {
+    font-size: 0.7em;
+    line-height: 1.1em;
+    padding: 0.1em 0em;
+  }
+}
+
 .subtitle {
   margin-bottom: 1em;
   font-size: 0.9em;
 }
 
+.howTo > .title {
+  padding-left: 1.2em;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  .howTo > .title {
+    font-size: 0.7em;
+    padding-left: 3em;
+  }
+}
+
+.number {
+  background: #9356dc;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.9em;
+  top: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .number {
+    top: 0.5em;
+    height: 1.5em;
+    width: 1.5em;
+    left: -0.2em;
+  }
+}
+
+.order-card > .fas {
+  padding-left: 2em;
+  padding-right: 0.8em;
+  font-size: 1.2em;
+  color: #807f7f;
+}
+
+.fas.fa-store {
+  color: #9356DC;
+}
+
+.order-list {
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 768px) {
+  .order-list {
+    font-size: 0.7em;
+    margin-bottom: 1.2em;
+    margin-top: -2.4em;
+  }
+}
+
 .main {
   background-color: #f6f6f6;
-  margin-top: 2em;
-  padding-bottom: 3em;
+  padding-top: 8%;
+  padding-bottom: 4em;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
 }
 
 .main .title {
   padding: 2em 1em 0.1em 1em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 768px) {
   .main .title {
-    font-size: 1.8em;
+    font-size: 0.6em;
+    padding-left: 3em;
+    margin-bottom: -2.6em;
+    padding-top: 0em;
   }
 }
 
@@ -144,7 +346,7 @@ nav .backLink {
           flex-direction: column;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurants-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -152,14 +354,14 @@ nav .backLink {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 100%;
   }
 }
 
 .restaurant-card {
   background-color: white;
   border-radius: 1.5em;
-  margin: 2% 4%;
+  margin: 3% 4%;
+  padding-bottom: 2%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -168,11 +370,11 @@ nav .backLink {
   position: relative;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .restaurant-card {
-    width: 40%;
-    margin: auto;
-    margin-bottom: 3em;
+    margin: 2% 10%;
+    padding-bottom: 0%;
+    width: 30%;
   }
 }
 
@@ -186,24 +388,11 @@ nav .backLink {
      object-fit: cover;
 }
 
-@media screen and (min-width: 768px) {
-  .restaurant-img {
-    max-height: 280px;
-    width: 100%;
-  }
-}
-
 .restaurant-text {
   line-height: 0em;
   padding-bottom: 1.6em;
   padding: 0.2em 0em 1.2em 1.2em;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurant-text {
-    font-size: 28px;
-  }
 }
 
 .tag {
@@ -217,17 +406,146 @@ nav .backLink {
   right: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  .tag {
-    font-size: 27px;
-  }
-}
-
 .restaurant-text > .fa-heart {
   font-weight: 100;
   position: absolute;
   right: 20px;
   top: 18px;
   font-size: 1.4em;
+}
+
+.restaurant-text > .fa-heart:hover {
+  background-clip: linear-gradient(to bottom, #ff79da, #9356dc) content-box;
+}
+
+.backMenu {
+  position: absolute;
+  left: 1em;
+  top: 1.2em;
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 426px) {
+  .backMenu {
+    font-size: 2.4em;
+    top: 0.8em;
+    left: 1.6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backMenu {
+    font-size: 1em;
+    top: 4%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .backMenu {
+    left: 17%;
+    top: 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .backMenu {
+    left: 25%;
+    top: 3%;
+  }
+}
+
+.menu__image {
+  height: 250px;
+  width: 100%;
+  margin-top: -0.6em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__image {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.menu__price {
+  position: absolute;
+  right: 1em;
+  top: 2.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__price {
+    top: 50%;
+    right: 2%;
+  }
+}
+
+.main__menu {
+  background-color: #f6f6f6;
+  padding: 1em 0em 3em 0em;
+  border-radius: 3em 3em 0em 0em;
+  position: relative;
+  top: -3em;
+  margin-bottom: -3em;
+}
+
+@media screen and (min-width: 768px) {
+  .main__menu {
+    padding-bottom: 0.2em;
+    padding-top: 0.1em;
+  }
+}
+
+.menu__title {
+  padding-bottom: 2%;
+  border-bottom: 3px solid #99E2D0;
+  margin-right: 83%;
+  margin-left: 6%;
+  font-weight: 450;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 0.6em;
+    padding-bottom: 1%;
+    margin-right: 91%;
+    border-bottom: 2px solid #99E2D0;
+  }
+}
+
+.menu__secondline {
+  font-weight: 450;
+}
+
+.menu__heading {
+  font-family: 'Shrikhand';
+  padding-left: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__heading {
+    font-size: 1em;
+    margin-bottom: 0em;
+    padding-left: 4.5%;
+  }
+}
+
+.heart {
+  position: absolute;
+  top: 2.2em;
+  right: 1.4em;
+  font-size: 1.4em;
+}
+
+@media screen and (min-width: 768px) {
+  .heart {
+    top: 3%;
+    right: 4%;
+    font-size: 95%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
