@@ -7,6 +7,138 @@ h4 {
   font-family: 'Shrikhand', sans-serif;
 }
 
+#loaderscreen {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  top: 0%;
+  -webkit-animation: fadeout 0.1s 3s forwards;
+          animation: fadeout 0.1s 3s forwards;
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
+.loader {
+  background-color: white;
+  width: 1.2em;
+  height: 6.5em;
+  -webkit-animation: round_loader 1.5s, 2, linear;
+          animation: round_loader 1.5s, 2, linear;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  border-radius: 0.8em;
+}
+
+#loader_1 {
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+
+#loader_2 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#loader_3 {
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
+}
+
+#loader_4 {
+  -webkit-animation-delay: 0.84s;
+          animation-delay: 0.84s;
+}
+
+#loader_5 {
+  -webkit-animation-delay: 0.96s;
+          animation-delay: 0.96s;
+}
+
+#loader_6 {
+  -webkit-animation-delay: 1.08s;
+          animation-delay: 1.08s;
+}
+
+#loader_7 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+#loader_8 {
+  -webkit-animation-delay: 1.32s;
+          animation-delay: 1.32s;
+}
+
+#loader_9 {
+  -webkit-animation-delay: 1.50s;
+          animation-delay: 1.50s;
+}
+
+@-webkit-keyframes round_loader {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #99e2d0;
+  }
+  50% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    background-color: #ff79d9;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #9356dc;
+  }
+}
+
+@keyframes round_loader {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #99e2d0;
+  }
+  50% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    background-color: #ff79d9;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #9356dc;
+  }
+}
+
 .btn {
   background: #FF79DA;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -160,6 +292,12 @@ footer h4 {
     font-size: 0.8em;
     margin-top: -1.5em;
     margin-bottom: -0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-footer {
+    font-size: 0.6em;
   }
 }
 
@@ -436,7 +574,7 @@ nav .backMenu-disabeld {
 @media screen and (min-width: 768px) {
   .backMenu {
     font-size: 1em;
-    top: 4%;
+    top: 2%;
     left: 10%;
   }
 }
@@ -448,7 +586,7 @@ nav .backMenu-disabeld {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .backMenu {
     left: 25%;
     top: 3%;
@@ -510,7 +648,7 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 768px) {
   .menu__title {
-    font-size: 0.6em;
+    font-size: 0.55em;
     padding-bottom: 1%;
     margin-right: 91%;
     border-bottom: 2px solid #99E2D0;
@@ -523,7 +661,9 @@ nav .backMenu-disabeld {
 
 .menu__heading {
   font-family: 'Shrikhand';
+  font-size: 1.6em;
   padding-left: 0.8em;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -536,7 +676,7 @@ nav .backMenu-disabeld {
 
 .heart {
   position: absolute;
-  top: 2.2em;
+  top: 1.7em;
   right: 1.4em;
   font-size: 1.4em;
 }

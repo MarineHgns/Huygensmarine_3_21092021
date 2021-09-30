@@ -10,14 +10,14 @@
     }
     @media screen and (min-width: 768px) {
         font-size: 1em;
-        top: 4%;
+        top: 2%;
         left: 10%;
     }
     @media screen and (min-width: 1024px) {
         left: 17%;
         top: 1%;
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1440px) {
         left: 25%;
         top: 3%;
     }
@@ -65,7 +65,7 @@
     margin-left: 6%;
     font-weight: 450;
     @media screen and (min-width: 768px) {
-        font-size: 0.6em;
+        font-size: 0.55em;
         padding-bottom: 1%;
         margin-right: 91%;
         border-bottom: 2px solid $color-tertiary;
@@ -79,7 +79,9 @@
 
 .menu__heading {
     font-family: 'Shrikhand';
+    font-size: 1.6em;
     padding-left: 0.8em;
+    font-weight: 600;
     @media screen and (min-width: 768px) {
         font-size: 1em;
         margin-bottom: 0em;
@@ -89,7 +91,7 @@
 
 .heart {
     position: absolute;
-    top: 2.2em;
+    top: 1.7em;
     right: 1.4em;
     font-size: 1.4em;
     @media screen and (min-width: 768px) {
