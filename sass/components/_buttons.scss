@@ -13,6 +13,9 @@
         font-size: 1em;
         margin: 2% 33%;
     }
+    &:hover {
+      background: lighten($color-primary, 15%);
+    }
   }
 
   .order-card {
@@ -48,17 +51,14 @@
 
   .menu__card {
     @include shadow;
+    margin-bottom: 1em;
     border-radius: 1em;
-    margin: 1em;
     font-weight: bold;
-    padding: 0.7em;
-    position: relative;
     font-size: 1em;
     line-height: 1.8em;
+    display: flex;
     @media screen and (min-width: 768px) {
       font-size: 0.6em;
-      margin: 1% 4%;
-      padding: 0.5%;
       line-height: 1.2em;
   }
   }
