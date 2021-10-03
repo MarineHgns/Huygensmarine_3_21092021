@@ -572,7 +572,7 @@ nav .backMenu-disabeld {
 
 .main__menu {
   background-color: #f6f6f6;
-  padding: 1em 0em 3em 0em;
+  padding: 1em 0em 1em 0em;
   border-radius: 3em 3em 0em 0em;
   position: relative;
   top: -3em;
@@ -581,8 +581,8 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 768px) {
   .main__menu {
-    padding-bottom: 0.2em;
-    padding-top: 0.1em;
+    padding-bottom: 1.4em;
+    padding-top: 0.4em;
   }
 }
 
@@ -711,7 +711,7 @@ nav .backMenu-disabeld {
   .heart {
     top: 3%;
     right: 4%;
-    font-size: 95%;
+    font-size: 1.3em;
   }
 }
 
