@@ -83,3 +83,15 @@
     
 }
 
+@keyframes slide{
+	0% {
+		transform: translatey(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translatey(0px);
+		opacity: 1;
+	}
+
+}

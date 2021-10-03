@@ -15,52 +15,8 @@
     }
     &:hover {
       background: lighten($color-primary, 15%);
+      box-shadow: 0 0 25px #0000002e;
     }
-  }
-
-  .order-card {
-    @include shadow;
-    background-color: $color-background;
-    border-radius: 1.4em;
-    margin: 9% 5.5%;
-    font-weight: bold;
-    padding: 1.8em 0em;
-    position: relative;
-    font-size: 1em;
-
-    @media screen and (min-width: 375px) {
-      font-size: 1.1em;
-    }
-    @media screen and (min-width: 425px) {
-      font-size: 1.4em;
-    }
-    @media screen and (min-width: 768px) {
-      margin: 2% 35%;
-      font-size: 1em;
-      padding: 1% 1%;
-  }
-  @media screen and (min-width: 1024px) {
-    
-    font-size: 1.1em;
-  }
-} 
-  
-  .order-card.color {
-    background-color: $color-primary-lighter;
-  }
-
-  .menu__card {
-    @include shadow;
-    margin-bottom: 1em;
-    border-radius: 1em;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.8em;
-    display: flex;
-    @media screen and (min-width: 768px) {
-      font-size: 0.6em;
-      line-height: 1.2em;
-  }
   }
 
 .main__menu > .btn {

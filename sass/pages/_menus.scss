@@ -33,21 +33,21 @@
         padding-bottom: 0.2em;
         padding-top: 0.1em;
     }
-    
 }
 
 .menu__title {
     padding-bottom: 2%;
     border-bottom: 3px solid $color-tertiary;
-    margin-right: 83%;
-    margin-left: 6%;
+    margin-right: 86%;
+    margin-left: 4%;
     font-weight: 300;
     font-size: 1em;
     @media screen and (min-width: 768px) {
         font-size: 0.55em;
         padding-bottom: 1%;
-        margin-right: 91%;
+        margin-right: 88.5%;
         border-bottom: 2px solid $color-tertiary;
+        margin-left: 9%;
     }
 }
 
@@ -57,7 +57,7 @@
     padding-left: 0.8em;
     font-weight: 600;
     @media screen and (min-width: 768px) {
-        font-size: 1em;
+        font-size: 1.4em;
         margin-bottom: 0em;
         padding-left: 4.5%;
     }
@@ -68,6 +68,7 @@
     align-items: flex-end;
     font-weight: 650;
     padding-bottom: 0.4em;
+    padding-right: 1em;
   }
 
 .menu__content {
@@ -84,8 +85,9 @@
     justify-content: space-between;
     overflow: hidden;
     white-space: nowrap;
-    padding: 0.4em;
+    padding: 0.4em 0.6em;
 }
+
 .menu__secondline {
     font-weight: 300;
 }
@@ -96,11 +98,17 @@
 }
 
 .menu__tag {
-    background: #99e2d0;
+    background: $color-tertiary;
     border-radius: 0 1em 1em 0;
     padding: 1em;
+    align-items: center;
+    display: none;
+}
+
+.menu__card:hover  .menu__tag {
+    width: 1.4em;
     display: flex;
-    align-items: center; 
+    transition: transform 0.4ms rotate (360deg) width 0.4s;
 }
 
 .heart {
@@ -117,6 +125,7 @@
 
 .menu__list {
     margin: 0.8em;
+    animation: slide 3s forwards;
 }
 
 
@@ -162,5 +171,24 @@
     @media screen and (min-width: 768px) {
       font-size: 0.6em;
       line-height: 1.2em;
+      margin: 1% 25%;
   }
+  }
+
+  .starter {
+    animation-name: slide;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+  }
+
+  .course {
+    animation-name: slide;
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+  }
+
+  .dessert {
+    animation-name: slide;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
   }
