@@ -1,5 +1,10 @@
 #loaderscreen{
-	position: absolute;
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 	display: flex;
 	align-items: center;
     justify-content: center;
@@ -8,7 +13,7 @@
     background-color: white;
     z-index: 1000;
     top: 0%;
-    animation: fadeout 0.1s 3s forwards;
+    animation: fadeout 0.1s 4s forwards;
 }
 
 @keyframes fadeout {
@@ -22,7 +27,7 @@
   }
 
 .loader{
-	background-color:white;
+	background-color: white;
 	width: 1.2em;
 	height: 6.5em;
 	animation: round_loader 1.5s, 2, linear;
@@ -71,7 +76,7 @@
 		transform:scale(1);
 		background-color:#99e2d0;
 	}
-	50%{
+	70%{
 		transform:scale(.3);
 		background-color:#ff79d9;
         

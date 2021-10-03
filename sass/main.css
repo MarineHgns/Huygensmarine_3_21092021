@@ -9,6 +9,11 @@ h4 {
 
 #loaderscreen {
   position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,8 +28,8 @@ h4 {
   background-color: white;
   z-index: 1000;
   top: 0%;
-  -webkit-animation: fadeout 0.1s 3s forwards;
-          animation: fadeout 0.1s 3s forwards;
+  -webkit-animation: fadeout 0.1s 4s forwards;
+          animation: fadeout 0.1s 4s forwards;
 }
 
 @-webkit-keyframes fadeout {
@@ -109,7 +114,7 @@ h4 {
             transform: scale(1);
     background-color: #99e2d0;
   }
-  50% {
+  70% {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
     background-color: #ff79d9;
@@ -127,7 +132,7 @@ h4 {
             transform: scale(1);
     background-color: #99e2d0;
   }
-  50% {
+  70% {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
     background-color: #ff79d9;
