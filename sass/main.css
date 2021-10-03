@@ -527,8 +527,13 @@ nav .backMenu-disabeld {
   font-size: 1.4em;
 }
 
-.restaurant-text > .fa-heart:hover {
-  background-clip: linear-gradient(to bottom, #ff79da, #9356dc) content-box;
+.fa-heart:hover {
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-linear-gradient(90deg, #ff79da, #9356dc);
+  font-weight: bold;
 }
 
 .backMenu {
