@@ -84,12 +84,20 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
     padding: 0.4em 0.6em;
 }
 
+.menu__firstline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .menu__secondline {
     font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .checkbox {
