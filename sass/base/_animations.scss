@@ -100,3 +100,26 @@
 	}
 
 }
+
+.menu__list {
+    margin: 0.8em;
+    animation: slide 3s forwards;
+}
+
+.starter {
+    animation-name: slide;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+  }
+
+  .course {
+    animation-name: slide;
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+  }
+
+  .dessert {
+    animation-name: slide;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }

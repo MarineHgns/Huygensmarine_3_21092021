@@ -170,6 +170,39 @@ h4 {
   }
 }
 
+.menu__list {
+  margin: 0.8em;
+  -webkit-animation: slide 3s forwards;
+          animation: slide 3s forwards;
+}
+
+.starter {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.course {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.dessert {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
 .btn {
   background: #FF79DA;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -422,6 +455,48 @@ nav .backMenu-disabeld {
   }
 }
 
+.order-card {
+  -webkit-box-shadow: 0 0 15px #0000002e;
+          box-shadow: 0 0 15px #0000002e;
+  background-color: #f6f6f6;
+  border-radius: 1.4em;
+  margin: 9% 5.5%;
+  font-weight: bold;
+  padding: 1.8em 0em;
+  position: relative;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 375px) {
+  .order-card {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .order-card {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-card {
+    margin: 2% 35%;
+    font-size: 1em;
+    padding: 1% 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .order-card {
+    font-size: 1.1em;
+  }
+}
+
+.order-card.color {
+  background-color: #f5edff;
+}
+
 .main {
   background-color: #f6f6f6;
   padding-top: 8%;
@@ -446,6 +521,7 @@ nav .backMenu-disabeld {
     padding-left: 3em;
     margin-bottom: -2.6em;
     padding-top: 0em;
+    padding-bottom: 1.6em;
   }
 }
 
@@ -467,6 +543,25 @@ nav .backMenu-disabeld {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0.1em;
   }
 }
 
@@ -474,7 +569,6 @@ nav .backMenu-disabeld {
   background-color: white;
   border-radius: 1.5em;
   margin: 3% 4%;
-  padding-bottom: 2%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -485,9 +579,10 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 768px) {
   .restaurant-card {
-    margin: 2% 10%;
-    padding-bottom: 0%;
     width: 30%;
+    height: 165px;
+    font-size: 0.8em;
+    margin: 1% 3%;
   }
 }
 
@@ -501,10 +596,15 @@ nav .backMenu-disabeld {
      object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant-img {
+    height: 110px;
+  }
+}
+
 .restaurant-text {
   line-height: 0em;
-  padding-bottom: 1.6em;
-  padding: 0.2em 0em 1.2em 1.2em;
+  padding: 0.2em 0em 1.2em 1.5em;
   position: relative;
 }
 
@@ -715,54 +815,6 @@ nav .backMenu-disabeld {
   }
 }
 
-.menu__list {
-  margin: 0.8em;
-  -webkit-animation: slide 3s forwards;
-          animation: slide 3s forwards;
-}
-
-.order-card {
-  -webkit-box-shadow: 0 0 15px #0000002e;
-          box-shadow: 0 0 15px #0000002e;
-  background-color: #f6f6f6;
-  border-radius: 1.4em;
-  margin: 9% 5.5%;
-  font-weight: bold;
-  padding: 1.8em 0em;
-  position: relative;
-  font-size: 1em;
-}
-
-@media screen and (min-width: 375px) {
-  .order-card {
-    font-size: 1.1em;
-  }
-}
-
-@media screen and (min-width: 425px) {
-  .order-card {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .order-card {
-    margin: 2% 35%;
-    font-size: 1em;
-    padding: 1% 1%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .order-card {
-    font-size: 1.1em;
-  }
-}
-
-.order-card.color {
-  background-color: #f5edff;
-}
-
 .menu__card {
   -webkit-box-shadow: 0 0 15px #0000002e;
           box-shadow: 0 0 15px #0000002e;
@@ -782,32 +834,5 @@ nav .backMenu-disabeld {
     line-height: 1.2em;
     margin: 1% 25%;
   }
-}
-
-.starter {
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.course {
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.dessert {
-  -webkit-animation-name: slide;
-          animation-name: slide;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
 }
 /*# sourceMappingURL=main.css.map */
