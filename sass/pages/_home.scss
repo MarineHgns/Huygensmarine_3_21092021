@@ -118,7 +118,7 @@ nav .backMenu-disabeld {
     }
     &:hover {
         background: $color-primary-lighter;
-        box-shadow: 0 0 25px #0000002e;
+        @include shadow2;
       }
 
 } 
@@ -220,6 +220,6 @@ nav .backMenu-disabeld {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    background-image:-webkit-linear-gradient(90deg, #ff79da, #9356dc);
+    background-image:-webkit-linear-gradient(90deg, $color-secondary, $color-primary);
     font-weight: bold;
 }

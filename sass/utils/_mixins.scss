@@ -1,3 +1,7 @@
 @mixin shadow {
     box-shadow: 0 0 15px #0000002e;
 }
+
+@mixin shadow2 {
+    box-shadow: 0 0 25px #0000002e;
+}
