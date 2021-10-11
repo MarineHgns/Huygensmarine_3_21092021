@@ -222,4 +222,6 @@ nav .backMenu-disabeld {
             background-clip: text;
     background-image:-webkit-linear-gradient(90deg, $color-secondary, $color-primary);
     font-weight: bold;
+    animation: scale 1.5s;
 }
+

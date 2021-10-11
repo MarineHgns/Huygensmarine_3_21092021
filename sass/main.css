@@ -146,6 +146,28 @@ h4 {
   }
 }
 
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 @-webkit-keyframes slide {
   0% {
     -webkit-transform: translatey(-100px);
@@ -638,6 +660,8 @@ nav .backMenu-disabeld {
   background-clip: text;
   background-image: -webkit-linear-gradient(90deg, #FF79DA, #9356DC);
   font-weight: bold;
+  -webkit-animation: scale 1.5s;
+          animation: scale 1.5s;
 }
 
 .backMenu {
