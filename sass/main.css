@@ -272,6 +272,13 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main__menu > .btn {
+    font-size: 1.3em;
+    font-weight: 400;
+  }
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -328,7 +335,8 @@ footer h4 {
 
 @media screen and (min-width: 1024px) {
   .container-footer {
-    font-size: 0.6em;
+    font-size: 0.8em;
+    padding: 0.8em 0.1em;
   }
 }
 
@@ -441,7 +449,8 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 1024px) {
   .howTo > .title {
-    font-size: 1em;
+    font-size: 1.1em;
+    padding-left: 0.8em;
   }
 }
 
@@ -467,10 +476,19 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 768px) {
   .number {
-    top: 0.5em;
+    top: 0.7em;
     height: 1.5em;
     width: 1.5em;
-    left: -0.2em;
+    left: -1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .number {
+    top: 1em;
+    left: -0.8em;
+    width: 2.4em;
+    height: 2.4em;
   }
 }
 
@@ -531,6 +549,13 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 1024px) {
   .order-card {
+    font-size: 1em;
+    padding: 2% 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .order-card {
     font-size: 1.1em;
   }
 }
@@ -554,12 +579,18 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main {
+    padding-bottom: 1.4em;
+  }
+}
+
 .main .title {
   padding: 2em 1em 0.1em 1em;
   font-size: 1em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .main .title {
     font-size: 0.6em;
     padding-left: 3em;
@@ -690,13 +721,7 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 1024px) {
   .backMenu {
-    left: 15%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .backMenu {
-    left: 25%;
+    left: 1%;
   }
 }
 
@@ -713,6 +738,12 @@ nav .backMenu-disabeld {
     height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__image {
+    height: 270px;
   }
 }
 
@@ -751,6 +782,12 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 1.3em;
+  }
+}
+
 .menu__heading {
   font-family: 'Shrikhand';
   font-size: 1.6em;
@@ -763,6 +800,12 @@ nav .backMenu-disabeld {
     font-size: 1.4em;
     margin-bottom: 0em;
     padding-left: 4.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__heading {
+    font-size: 2em;
   }
 }
 
@@ -830,10 +873,10 @@ nav .backMenu-disabeld {
   padding-bottom: 0.4em;
   -webkit-transform: translateX(-1em);
           transform: translateX(-1em);
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
 .menu__card:hover .menu__price {
@@ -887,6 +930,12 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .heart {
+    font-size: 2em;
+  }
+}
+
 .menu__card {
   -webkit-box-shadow: 0 0 15px #0000002e;
           box-shadow: 0 0 15px #0000002e;
@@ -905,6 +954,12 @@ nav .backMenu-disabeld {
     font-size: 0.6em;
     line-height: 1.2em;
     margin: 1% 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__card {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

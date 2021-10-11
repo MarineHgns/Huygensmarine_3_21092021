@@ -3,12 +3,9 @@
     left: 0.4em;
     font-size: 1.2rem;
     @media screen and (min-width: 1024px) {
-        left: 15%;
+        left: 1%;
     }
-    @media screen and (min-width: 1440px) {
-        left: 25%;
-    }
-}
+}   
 
 .menu__image {
     height: 250px;
@@ -18,6 +15,9 @@
     @media screen and (min-width: 768px) {
         height: 200px;
         object-fit: cover;
+    }
+    @media screen and (min-width: 1024px) {
+        height: 270px;
     }
 }
 
@@ -48,6 +48,9 @@
         border-bottom: 2px solid $color-tertiary;
         margin-left: 9%;
     }
+    @media screen and (min-width: 768px) {
+        font-size: 1.3em;
+    }
 }
 
 .menu__heading {
@@ -59,6 +62,9 @@
         font-size: 1.4em;
         margin-bottom: 0em;
         padding-left: 4.5%;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 2em;
     }
 }
 
@@ -104,7 +110,7 @@
     font-weight: 650;
     padding-bottom: 0.4em;
     transform: translateX(-1em);
-    transition: transform 1.5s;
+    transition: transform 2s;
   }
 
 .menu__card:hover .menu__price {
@@ -145,6 +151,9 @@
         right: 4%;
         font-size: 1.3em;
     }
+    @media screen and (min-width: 768px) {
+        font-size: 2em;
+    }
 }
 
 .menu__card {
@@ -159,5 +168,8 @@
       font-size: 0.6em;
       line-height: 1.2em;
       margin: 1% 25%;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 1em;
     }
 }

@@ -57,7 +57,8 @@ nav .backMenu-disabeld {
         padding-left: 3em;
     }
     @media screen and (min-width: 1024px) {
-        font-size: 1em;
+        font-size: 1.1em;
+        padding-left: 0.8em;
     }
 }
 
@@ -74,11 +75,17 @@ nav .backMenu-disabeld {
     align-items: center;
     justify-content: center;
     @media screen and (min-width: 768px){
-        top: 0.5em;
+        top: 0.7em;
         height: 1.5em;
         width: 1.5em;
-        left: -0.2em;
-      }
+        left: -1em;
+    }
+      @media screen and (min-width: 1024px) {
+        top: 1em;
+        left: -0.8em;
+        width: 2.4em;
+        height: 2.4em;
+    }
 }
 
 .order-card > .fas {
@@ -123,8 +130,12 @@ nav .backMenu-disabeld {
       padding: 1% 1%;
     }
     @media screen and (min-width: 1024px) {
-    font-size: 1.1em;
+    font-size: 1em;
+    padding: 2% 1%;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 1.1em;
+        }
     &:hover {
         background: $color-primary-lighter;
         @include shadow2;
@@ -140,14 +151,16 @@ nav .backMenu-disabeld {
     @media screen and (min-width: 768px) {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
-
-    }   
+    }
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 1.4em;
+    }    
 }
 
 .main .title {
     padding: 2em 1em 0.1em 1em;
     font-size: 1em;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px)and(max-width:1023px) {
         font-size: 0.6em;
         padding-left: 3em;
         margin-bottom: -2.6em;
