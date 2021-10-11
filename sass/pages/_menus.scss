@@ -62,12 +62,7 @@
     }
 }
 
-.menu__price {
-    display: flex;
-    align-items: flex-end;
-    font-weight: 650;
-    padding-bottom: 0.4em;
-  }
+
 
 .menu__content {
     overflow: hidden;
@@ -103,6 +98,18 @@
     color: white;
     transition: transform 1.5s,
 }
+.menu__price {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 650;
+    padding-bottom: 0.4em;
+    transform: translateX(-1em);
+    transition: transform 1.5s;
+  }
+
+.menu__card:hover .menu__price {
+    transform: translateX(-4em);
+}
 
 .menu__tag {
     background: $color-tertiary;
@@ -120,7 +127,6 @@
 
 .menu__card:hover  .menu__tag {
     transform: translateX(0em);
-    margin-left: 1.6em;
     
 }
 

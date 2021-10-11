@@ -365,7 +365,7 @@ header {
 
 body {
   margin: auto;
-  max-width: 768px;
+  max-width: 1440px;
   scroll-behavior: smooth;
 }
 
@@ -395,6 +395,12 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .position {
+    font-size: 1em;
+  }
+}
+
 .masthead {
   text-align: center;
   background-color: #f6f6f6;
@@ -407,6 +413,12 @@ nav .backMenu-disabeld {
     font-size: 0.7em;
     line-height: 1.1em;
     padding: 0.1em 0em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .masthead {
+    font-size: 1.1em;
   }
 }
 
@@ -424,6 +436,12 @@ nav .backMenu-disabeld {
   .howTo > .title {
     font-size: 0.7em;
     padding-left: 3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .howTo > .title {
+    font-size: 1em;
   }
 }
 
@@ -471,7 +489,7 @@ nav .backMenu-disabeld {
   margin-bottom: 4em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .order-list {
     font-size: 0.7em;
     margin-bottom: 1.2em;
@@ -748,17 +766,6 @@ nav .backMenu-disabeld {
   }
 }
 
-.menu__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-weight: 650;
-  padding-bottom: 0.4em;
-}
-
 .menu__content {
   overflow: hidden;
   display: -webkit-box;
@@ -812,6 +819,28 @@ nav .backMenu-disabeld {
   transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
+.menu__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 650;
+  padding-bottom: 0.4em;
+  -webkit-transform: translateX(-1em);
+          transform: translateX(-1em);
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.menu__card:hover .menu__price {
+  -webkit-transform: translateX(-4em);
+          transform: translateX(-4em);
+}
+
 .menu__tag {
   background: #99E2D0;
   border-radius: 0 1em 1em 0;
@@ -836,7 +865,6 @@ nav .backMenu-disabeld {
 .menu__card:hover .menu__tag {
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
-  margin-left: 1.6em;
 }
 
 .menu__card:hover .checkbox {
