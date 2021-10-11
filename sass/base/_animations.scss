@@ -1,5 +1,5 @@
 #loaderscreen{
-    position: absolute;
+    position: fixed;
     margin: auto auto;
     left: 0;
     right: 0;
@@ -14,6 +14,7 @@
     z-index: 1000;
     top: 0%;
     animation: fadeout 0.1s 4s forwards;
+    overflow: none;
 }
 
 @keyframes fadeout {
@@ -33,6 +34,7 @@
 	animation: round_loader 1.5s, 2, linear;
 	transform: scale(.3);
 	border-radius: 0.8em;
+  overflow: none;
 }
 
 #loader_1{
