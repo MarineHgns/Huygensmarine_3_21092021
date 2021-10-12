@@ -200,6 +200,20 @@ h4 {
           animation: slide 3s forwards;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0em;
+    padding: 0em;
+  }
+}
+
 .starter {
   -webkit-animation-name: slide;
           animation-name: slide;
@@ -207,6 +221,12 @@ h4 {
           animation-fill-mode: backwards;
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
+}
+
+@media screen and (min-width: 1024px) {
+  .starter {
+    max-width: 34%;
+  }
 }
 
 .course {
@@ -218,6 +238,12 @@ h4 {
           animation-fill-mode: backwards;
 }
 
+@media screen and (min-width: 1024px) {
+  .course {
+    max-width: 34%;
+  }
+}
+
 .dessert {
   -webkit-animation-name: slide;
           animation-name: slide;
@@ -225,6 +251,12 @@ h4 {
           animation-delay: 1000ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+@media screen and (min-width: 1024px) {
+  .dessert {
+    max-width: 34%;
+  }
 }
 
 .btn {
@@ -373,7 +405,6 @@ header {
 
 body {
   margin: auto;
-  max-width: 1440px;
   scroll-behavior: smooth;
 }
 
@@ -515,6 +546,21 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .order-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .order-card {
   -webkit-box-shadow: 0 0 15px #0000002e;
           box-shadow: 0 0 15px #0000002e;
@@ -549,8 +595,9 @@ nav .backMenu-disabeld {
 
 @media screen and (min-width: 1024px) {
   .order-card {
-    font-size: 1em;
-    padding: 2% 1%;
+    font-size: 0.9em;
+    padding: 2% 4% 2% 1%;
+    margin: 0% 3%;
   }
 }
 
@@ -788,6 +835,13 @@ nav .backMenu-disabeld {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .menu__title {
+    margin: 1em 14em 1em 4em;
+    padding: 1em 1em 0.4em 0em;
+  }
+}
+
 .menu__heading {
   font-family: 'Shrikhand';
   font-size: 1.6em;
@@ -873,10 +927,10 @@ nav .backMenu-disabeld {
   padding-bottom: 0.4em;
   -webkit-transform: translateX(-1em);
           transform: translateX(-1em);
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .menu__card:hover .menu__price {
@@ -960,6 +1014,24 @@ nav .backMenu-disabeld {
 @media screen and (min-width: 768px) {
   .menu__card {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__card {
+    margin: 2% 4%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -114,22 +114,41 @@
 .menu__list {
     margin: 0.8em;
     animation: slide 3s forwards;
+    @media screen and (min-width:1024px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0em;
+      padding: 0em;
+      
+  }
 }
 
 .starter {
     animation-name: slide;
     animation-fill-mode: backwards;
     animation-delay: 100ms;
+    @media screen and (min-width:1024px) {
+    max-width: 34%;
+      
+  }
+    
   }
 
   .course {
     animation-name: slide;
     animation-delay: 700ms;
     animation-fill-mode: backwards;
+    @media screen and (min-width:1024px) {
+      max-width: 34%;
+        
+    }
   }
 
   .dessert {
     animation-name: slide;
     animation-delay: 1000ms;
     animation-fill-mode: backwards;
+    @media screen and (min-width:1024px) {
+      max-width: 34%;  
+    }
   }
